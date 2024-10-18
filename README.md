@@ -39,7 +39,7 @@ Implemente um endpoint que receba uma lista de com id de exames, para cada exame
 ```
 
 ### URL de autorização
-https://bded-2804-d41-ef23-ee00-c5a1-e3e0-985c-3719.ngrok-free.app/authorize
+POST https://bded-2804-d41-ef23-ee00-c5a1-e3e0-985c-3719.ngrok-free.app/authorize
 
 ### Payload esperado para autorização
 ```json
