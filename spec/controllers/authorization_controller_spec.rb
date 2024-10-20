@@ -23,10 +23,5 @@ describe AuthorizationController  < ActionController::TestCase do
         ]
       }
     end
-
-    it 'teste' do
-      VCR.use_cassette('authorize_exams/success') do 
-      end
-    end
   end
 end
