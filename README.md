@@ -1,9 +1,9 @@
 ## Desafio técnico
-Implemente um endpoint que receba uma lista de com id de exames, para cada exame faça a autorização utilizando o endpoint de autorização e salve o status e `authorization_id` da autorização
+Implemente um endpoint que receba uma lista com id de exames, para cada exame faça a autorização utilizando o endpoint de autorização e salve o `status` e `authorization_id` da autorização.
 
-**Obs.: Para fazer a autorização é preciso pegar o tuss na model de Exam**
+**Obs.: Para fazer a autorização é preciso pegar o "tuss" na model de Exam**
 
-### Exemplo de parâmetros recebidos na action `authorization#authorize_exams`
+### Exemplo de parâmetros recebidos na action `authorization#authorize`
 ```ruby
 {
   patient: {
@@ -39,12 +39,12 @@ Implemente um endpoint que receba uma lista de com id de exames, para cada exame
 ```
 
 ### URL de autorização
-POST https://bded-2804-d41-ef23-ee00-c5a1-e3e0-985c-3719.ngrok-free.app/authorize
+POST https://972ogsbti9.execute-api.us-east-1.amazonaws.com/authorize
 
 ### Payload esperado para autorização
 ```json
 {
-  "exam": { "tuss": "202410171111" }
+  "exam": { "tuss_code": "202410171111" }
 }
 
 ```
