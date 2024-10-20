@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2024_10_17_135736) do
+ActiveRecord::Schema[7.2].define(version: 2024_10_20_201620) do
   create_table "authorizations", force: :cascade do |t|
     t.string "patient_name"
     t.string "patient_cpf"
@@ -18,6 +18,7 @@ ActiveRecord::Schema[7.2].define(version: 2024_10_17_135736) do
     t.string "authorization_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "status"
     t.index ["catalog_exam_id"], name: "index_authorizations_on_catalog_exam_id"
   end
 
