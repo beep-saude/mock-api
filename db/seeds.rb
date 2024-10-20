@@ -33,9 +33,9 @@ exams = [
 
 
 exams.each do |exam_hash|
-  next if Catalog::Exam.exists?(exam_hash)
+  next if Exam.exists?(exam_hash)
 
-  Catalog::Exam.create(exam_hash)
+  Exam.create(exam_hash)
 end
 
 puts 'Exames cadastrados com sucesso!'

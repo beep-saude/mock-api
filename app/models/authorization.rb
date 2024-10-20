@@ -1,3 +1,3 @@
 class Authorization < ApplicationRecord
-  belongs_to :catalog_exam
+  belongs_to :exam
 end

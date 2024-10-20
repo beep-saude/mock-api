@@ -10,24 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2024_10_20_201620) do
+ActiveRecord::Schema[7.2].define(version: 2024_10_17_135736) do
   create_table "authorizations", force: :cascade do |t|
     t.string "patient_name"
     t.string "patient_cpf"
-    t.integer "catalog_exam_id", null: false
+    t.string "status"
+    t.integer "exam_id", null: false
     t.string "authorization_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "status"
-    t.index ["catalog_exam_id"], name: "index_authorizations_on_catalog_exam_id"
+    t.index ["exam_id"], name: "index_authorizations_on_exam_id"
   end
 
-  create_table "catalog_exams", force: :cascade do |t|
+  create_table "exams", force: :cascade do |t|
     t.string "name"
     t.string "tuss"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "authorizations", "catalog_exams"
+  add_foreign_key "authorizations", "exams"
 end
