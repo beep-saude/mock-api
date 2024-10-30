@@ -1,5 +1,5 @@
 ## Desafio técnico
-Implemente um endpoint que receba uma lista com id de exames, para cada exame faça a autorização utilizando o endpoint de autorização e salve o `status` e `authorization_id` da autorização.
+Implemente um endpoint que receba uma lista com ids de exames, para cada exame faça a autorização utilizando o endpoint de autorização e salve o `status` e `authorization_id` da autorização.
 
 **Obs.: Para fazer a autorização é preciso pegar o "tuss" na model de Exam**
 
